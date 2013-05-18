@@ -747,7 +747,7 @@ void collect_packets(int fd, int timeout) {
 
 void usage(){
 	fprintf(stdout, "Usage:\n");
-	fprintf(stdout, "./tcp <options> <IP>\n");
+	fprintf(stdout, "./tcpping [options] <address>\n");
 	fprintf(stdout, "options:\n");
 	fprintf(stdout, "-c --count <count>             set send how many packets\n");
 	fprintf(stdout, "-s --source-port <port>        Source port (default is 54321)\n");
@@ -756,8 +756,8 @@ void usage(){
 	fprintf(stdout, "-m --mss <size>                TCP Maximum segment size (default is 16496)\n");
 	fprintf(stdout, "-t --timeout <seconds>         packet wait timeout (default is 5 seconds)\n");
 	fprintf(stdout, "-n                             enable nagios plugin output mode\n");
-	fprintf(stdout, "-W <wrta>,<wpl>%%              Warning threshold (nagios output mode)\n");
-	fprintf(stdout, "-C <crta>,<cpl>%%              Critical threshold (nagios output mode)\n");
+	fprintf(stdout, "-W <wrta>,<wpl>%%               Warning threshold (nagios output mode)\n");
+	fprintf(stdout, "-C <crta>,<cpl>%%               Critical threshold (nagios output mode)\n");
 	fprintf(stdout, "-h --help                      This message\n");
 	exit(0);
 }
